@@ -1,10 +1,5 @@
 #Front-end dev intensive training program week 02.
 
-## Live URLS for the assignments:
-
-- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
-- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
-- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
 
 ## Asignments:
 
@@ -34,3 +29,9 @@ f. Rounded corners on images
 e) Remember that you can customize the pages to your liking, you will not be graded in
 any way on how it looks as it’s a personal preference, but make sure to use at least all of
 the properties mentioned above in the list
+
+## Solution:
+
+- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
+- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
+- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
