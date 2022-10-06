@@ -1,0 +1,28 @@
+h1{
+  color: red;
+}
+h2{
+  color: #558F5A;
+}
+h3{
+  color: hsl(245,30%,51%);
+}
+h4{
+  color: rgb(167, 134, 94);
+}
+
+div h1{
+  background-color: pink;
+}
+
+div h2{
+  background-color: black;
+}
+
+div h3{
+  background-color: grey;
+}
+
+div h4{
+  background-color: paleturquoise;
+}
