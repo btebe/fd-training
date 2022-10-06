@@ -50,14 +50,13 @@ directory you just created
 iii. Rename the image to first-img.jpg/.png
 iv. Add the image to the index.html file:
 ``<img src="images/first-img.jpg">``
-v. Save the index.html file and open it in a browser to view your image in all
+    - Save the index.html file and open it in a browser to view your image in all
 its glory. Remember to use ./ before the images/first-img.jpg if your
 image isn’t loading
-
-l. As a bit of practice, add an alt attribute to the first-img you added to the
+    - As a bit of practice, add an alt attribute to the first-img you added to the
 links-and-images project.
 
-4. Assignment(Main HTML project): For presentation make a few page presentation
+- Assignment(Main HTML project): For presentation make a few page presentation
 website about your hobby/favorite books/movies etc. Your website should contain a
 homepage with a link to go inside to the page where your material should be presented
 in list form, with links leading to pages with the description(text & image) of your chosen
