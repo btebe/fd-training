@@ -45,7 +45,7 @@ add a link to get back from the About page to your homepage
 
   - Create a new directory named images within the links-and-images
 project
-ii. Next, download any image .jpg/.png and move it into the images
+    - Next, download any image .jpg/.png and move it into the images
 directory you just created
 iii. Rename the image to first-img.jpg/.png
 iv. Add the image to the index.html file:
