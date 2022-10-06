@@ -22,9 +22,9 @@ c. Fill in the usual HTML boilerplate
 d. Set the title to “Links & Images”
 e. Finally, add the following h1 to the body: <h1>Homepage</h1>
 f. Create another HTML file named about.html
-g. Back in the index page, add the following anchor element below the <h1>
-element: ``<a href=”https://theuselessweb.com/”>click me</a>
-<a href="about.html">About</a>``
+g. Back in the index page, add the following anchor element below the ``<h1>``
+element: ``<a href=”https://theuselessweb.com/”>click me</a>``
+``<a href="about.html">About</a>``
 
 h. Open the index file in a browser and click on the About link to make sure it is all
 wired together correctly. Clicking the link should go to the empty about page you
