@@ -6,6 +6,8 @@
 - Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
 - Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
 
+## Asignments:
+
 1. Read more about CSS and try to answer as many questions as you can from the CSS -
 Terminology & Definitions file, which you can find attached in the email.
 
