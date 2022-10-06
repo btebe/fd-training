@@ -1,4 +1,4 @@
-#Front-end dev intensive training program week 01.
+#Front-end dev intensive training program week 02.
 
 ## Live URLS for the assignments:
 
