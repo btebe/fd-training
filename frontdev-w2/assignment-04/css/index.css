@@ -55,12 +55,12 @@
 }
 .right-quote{
   bottom: 16%;
-  right: 2%;
+  right: 5%;
 }
 
 .left-quote{
   top: 27%;
-  left: 2%;
+  left: 5%;
 }
 
 /* buttons */
@@ -124,7 +124,7 @@
 .product-list-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .product-list-container > .product-item {
   cursor: pointer;
@@ -165,7 +165,7 @@
   display: flex;
   width: 100%;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .testimonial-list-container > .testimonial-item{
