@@ -5,10 +5,10 @@
 1. Read more about HTML and try to answer as many questions as you can from the
 HTML - Terminology & Definitions file, which you can find attached in the email.
 2. Assignment(Lists):
-  - An unordered shopping list of your favorite foods
-  - An ordered list of todo’s you need to get done today
-  - An unordered list inside of an ordered list, of places you’d like to visit someday
-  - An ordered list inside of an unordered list, of your all time top 5 favorite video
+    - An unordered shopping list of your favorite foods
+    - An ordered list of todo’s you need to get done today
+    - An unordered list inside of an ordered list, of places you’d like to visit someday
+    - An ordered list inside of an unordered list, of your all time top 5 favorite video
 games or movies
 3. Assignment(Links & Images):
   - Create a new directory named links-and-images
