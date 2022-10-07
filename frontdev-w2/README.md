@@ -7,11 +7,11 @@
 Terminology & Definitions file, which you can find attached in the email.
 
 2. Assignment (Colors):
-a) Create 4 headings from h1 to h4
-b) Have all headings have different colors, according to your taste
-c) When giving values to colors of these headings, make sure all use a different type of
+    a. Create 4 headings from h1 to h4
+    b. Have all headings have different colors, according to your taste
+    c. When giving values to colors of these headings, make sure all use a different type of
 values (keyword, hex, rgb, hsl)
-d) Put all headings in a div and color the div to your liking
+    d. Put all headings in a div and color the div to your liking
 
 3. Assignment (Links & Images):
 a) Open your project from the previous HTML assignments (links-and-images)
