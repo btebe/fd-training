@@ -1,6 +1,6 @@
-What do HTML and CSS stand for?
-- HTML: hypertext markup language
-- CSS: cascading style sheet
+1. What do HTML and CSS stand for?
+    - HTML: hypertext markup language
+    - CSS: cascading style sheet
 
 Would you rather use HTML or CSS, for putting paragraphs of text on a webpage?
 - i would rather use HTML for semantic purpose. css has no sementic meaning.
