@@ -56,13 +56,11 @@
 .right-quote{
   bottom: 16%;
   right: 2%;
-  
 }
 
 .left-quote{
   top: 27%;
   left: 2%;
-  
 }
 
 /* buttons */
@@ -99,7 +97,6 @@
 }
 .hero > .container > picture {
   width: 45%;
-  
 }
 .hero > .container > article {
   flex: 1;
@@ -252,7 +249,6 @@ footer > .container{
   justify-content: space-between;
   align-items: center;
   padding-block: 3rem;
-
 }
 
 footer > .container > ul{
