@@ -60,7 +60,7 @@ welcomed, just don't over do it :D)
 
 ## Solution:
 
-- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-01/question.md)
+- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-01/questions.md)
 - Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-02/)
 - Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
 - Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-04/)
