@@ -55,6 +55,7 @@
 .right-quote, .left-quote{
   position: absolute;
 }
+
 .right-quote{
   bottom: 16%;
   right: 5%;
