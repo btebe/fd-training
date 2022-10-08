@@ -14,12 +14,14 @@
   display: flex;
   gap: 2rem;
 }
+
 .primary-navigation > ul > li{
   border: 3px solid transparent;
   padding: 2rem;
   padding-block: 1rem;
   cursor: pointer;
 }
+
 .primary-navigation > ul > li:hover{
   border-color: var(--clr-accent-400);
 }
