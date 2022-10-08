@@ -74,6 +74,7 @@
   border: none;
   cursor: pointer;
 }
+
 .btn > span > img{
   width: 60%;
 }
@@ -95,9 +96,11 @@
   justify-content: space-between;
   width: 100%;
 }
+
 .hero > .container > picture {
   width: 45%;
 }
+
 .hero > .container > article {
   flex: 1;
   display: flex;
@@ -126,6 +129,7 @@
   width: 100%;
   justify-content: space-around;
 }
+
 .product-list-container > .product-item {
   cursor: pointer;
   filter: drop-shadow(6px 8px 7px rgba(0, 0, 0, 0.25));
@@ -159,7 +163,6 @@
   padding-bottom: 8rem;
   position: relative;
 }
-
 
 .testimonial-list-container {
   display: flex;
@@ -205,6 +208,7 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .about > .container > article > p{
   max-width: 40ch;
   line-height: 1.6;
@@ -226,6 +230,7 @@
   gap: 1rem;
   filter: drop-shadow(6px 8px 7px rgba(0, 0, 0, 0.25));
 }
+
 .newsletter .container > div > header{
   width: 60%;
 }
@@ -235,8 +240,8 @@
   width: 60%;
   justify-content: center;
   gap: 1rem;
-  
 }
+
 .newsletter .container > div > form > input[type="text"]{
   flex:1;
   padding: .5rem;
