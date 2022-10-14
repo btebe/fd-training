@@ -1,5 +1,11 @@
 # Front-end dev intensive training program week 02.
 
+## Solution:
+
+- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-01/questions.md)
+- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
+- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
+- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
 
 ## Asignments:
 
@@ -47,10 +53,3 @@ a blank HTML document and not know where to start. Our suggestion: take it one
 section at a time. The website you’re creating has 4 main sections (and a footer), so pick
 one and get it into pretty good shape before moving on. Starting at the top is always a
 solid plan.
-
-## Solution:
-
-- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-01/questions.md)
-- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
-- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
-- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
