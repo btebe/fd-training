@@ -1,5 +1,12 @@
 # Front-end dev intensive training program week 03.
 
+## Solution:
+
+- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-01/questions.md)
+- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
+- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
+- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
+
 ## Asignments:
 1. Read more about JS and try to answer as many questions as you can from the JS1 - Terminology
 & Definitions file, which you can find attached in the email.
