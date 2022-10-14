@@ -33,3 +33,7 @@ input rock, ROCK, RocK or any other variation). (Here’s a tip on how to do tha
     - Important note: you want to return the results of this function call, not console.log()
 them. You’re going to use what you return later on, so let’s test this function by using
 console.log to see the results:
+``function playGround(playerSelection, computerSelection){ //your code}
+const playerSelection = "rock";
+const computerSelection = computerPlay();
+console.log(playGround(playerSelection, computerSelection)); ``
