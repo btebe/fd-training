@@ -34,3 +34,14 @@ input rock, ROCK, RocK or any other variation). (Here’s a tip on how to do tha
 them. You’re going to use what you return later on, so let’s test this function by using
 console.log to see the results:
 ![1](./images/code_1.png)
+    - Write a NEW function called game(). Call the playRound function inside of this one to
+play a 5 round game that keeps score and reports a winner or loser at the end.
+        - Remember loops? This
+        ![2](./images/code_2.png)
+        - At this point you should be using console.log() to display the results of each
+round and the winner at the end.
+        - Use prompt() to get input from the user. Read the docs here.
+        - Feel free to re-work your previous functions if you need to. Specifically, you
+might want to change the return value to something more useful.
+        - Feel free to re-work your previous functions if you need to. Specifically, you
+might want to change the return value to something more useful.
