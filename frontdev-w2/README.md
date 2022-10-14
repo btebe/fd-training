@@ -1,4 +1,4 @@
-#Front-end dev intensive training program week 02.
+# Front-end dev intensive training program week 02.
 
 
 ## Asignments:
