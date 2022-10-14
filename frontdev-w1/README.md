@@ -1,6 +1,13 @@
 # Front-end dev intensive training program week 01.
 
-# Assignments
+## Solution:
+
+- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-01/questions.md)
+- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-02/)
+- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
+- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-04/)
+
+## Assignments
 
 1. Read more about HTML and try to answer as many questions as you can from the
 HTML - Terminology & Definitions file, which you can find attached in the email.
@@ -57,10 +64,3 @@ in list form, with links leading to pages with the description(text & image) of 
 subject. As an added bonus, you can make each list element into a link, leading to the
 page where additional information about said subject can be found(images are always
 welcomed, just don't over do it :D)
-
-## Solution:
-
-- Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-01/questions.md)
-- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-02/)
-- Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
-- Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-04/)
