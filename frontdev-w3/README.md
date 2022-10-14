@@ -3,7 +3,7 @@
 ## Solution:
 
 - Assignment-01: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-01/questions.md)
-- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-02/)
+- Assignment-02: [Live URL](https://btebe.github.io/fd-training/frontdev-w3/assignment-02/)
 - Assignment-03: [Live URL](https://btebe.github.io/fd-training/frontdev-w1/assignment-03/links-and-images/)
 - Assignment-04: [Live URL](https://btebe.github.io/fd-training/frontdev-w2/assignment-04/)
 
