@@ -1,7 +1,7 @@
 # Javascript Questions
 
 1. Name the three ways to declare a variable?
-    - 
+    - hiu
 2. Which of the three variable declarations should you avoid and why?
     - 
 3. What rules should you follow when naming variables?
