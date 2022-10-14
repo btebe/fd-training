@@ -25,8 +25,8 @@ strings?
     - num-- for decrement
 9. Explain the difference between prefixing and post-fixing increment/decrement
 operators.
-    - post-fixing: returns the value before incrementing/decrementing.
-    -  prefixing: returns the value after incrementing/decrementing.
+    - post-fixing: returns the value before incrementing/decrementing. ``x++``
+    -  prefixing: returns the value after incrementing/decrementing. ``++x``
 10. What is operator precedence and how is it handled in JS?
     - determines the order in which operators are evaluated
     - The multiplication operator has higher precedence than the addition operator and thus will be evaluated first.
