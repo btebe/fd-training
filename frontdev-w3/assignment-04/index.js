@@ -9,7 +9,7 @@ let computerPlay = () => {
 };
 
 /**
- * check if player input is within the keywords.
+ *  needs the help of the checkHand function to check if player input is within the keywords.
  * corrects player's keyword case to lowercase
  * @param {string} playerSelection player's input
  * @return {string} the standard case of one of the keywords inputed. or else it returns a null.
@@ -52,7 +52,7 @@ let checkHand = (hand) => {
 };
 
 /**
- * the logic behind rock,paper and scissors
+ * the logic behind rock,paper and scissors, helps function playRound
  * @param {string} playerHand player's input
  * @param {string} computerHand computer's input
  * @return {object} an object with the scores of the players for one round. or else it returns a null.
