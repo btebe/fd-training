@@ -48,42 +48,64 @@ operators.
     - you can use single quotes inside double quotes or double quotes inside single quotes
     - backticks: for string operations and string literals
 17. What is the term for embedding variables/expressions in a string?
-    - ```${num}``` or ```${1+2}```
+    - string interpolation: the process of embedding an expression into part of a string. 
 18. Which type of quote lets you embed variables/expressions in a string?
-    - 
+    - backticks
 19. How do you embed variables/expressions in a string?
-    - 
+    - using ``${num}``
 20. How do you escape characters in a string?
-    - 
+    - backslash character ( \ ) 
 21. What is the difference between the slice/substring/substr string methods?
-    - 
+    - slice: extracts parts of a string and returns the extracted parts in a new string. 
+    - substring: extracts parts of a string and returns the extracted parts in a new string.
+    - substr: extracts parts of a string, beginning at the character at the specified position, 
+    - and returns the specified number of characters.
 22. What are the three logical operators and what do they stand for?
-    - 
+    - || : OR
+    - && : AND
+    - ! : NOT
 24. What are the comparison operators?
-    - 
+    - == : equal
+    - != : noy equal
+    - === : strict equal
 25. What are truthy and falsy values?
-    - 
+    - Truthy values: values that evaluate to True in a boolean context.
+    - Falsy values: values that evaluate to False in a boolean context.
 26. What are the falsy values in JavaScript?
-    - 
+    - false, 0, -0, 0n , "", '', backticks, null, undefined, NaN and document.all
 27. What are conditionals?
-    - 
+    - control behavior in JavaScript and determine whether or not pieces of code can run.
 28. What is the syntax for an if/else conditional?
-    -
+    - ``if(condition){}else{}``
 29. What is the syntax for a switch statement?
-    -
+    -``switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}``
 30. What is the syntax for a ternary operator?
-    -
+    -``num1 == num2 ? console.log('true') : console.log('flase');``
 31. What is nesting?
-    - 
+    - when you write something inside of something else.
+    - You can have a function inside of another function
 32. What are functions useful for?
-    -
+    - define a block of code, give it a name and then execute it as many times as you want.
 33. How do you invoke a function?
-    -
+    - by calling the function name. if no params then () if with params (a,b)
+    - ex: isOdd();
 34. What are anonymous functions?
-    -
+    - a function that does not have any name associated with it.
+    - not accessible after its initial creation, it can only be accessed 
+    - by a variable it is stored in as a function as a value. 
 35. What is function scope?
-    -
+    - Variables that are declared inside a function are called local variables and in the function scope.
+    - Local variables are accessible anywhere inside the function.
 36. What are return values?
-    -
+    - The return statement stops the execution of a function and returns a value. 
 37. What are arrow functions?
-    -
+    - another way to create a function
