@@ -75,7 +75,7 @@ let game = () => {
     } else {
       playerSelection = prompt(promptext2);
     }
-
+    // if press cancel, exits game
     if (playerSelection == null) return "game exited!";
 
     let outcome = playRound(playerSelection, computerPlay());
@@ -84,6 +84,8 @@ let game = () => {
       const warningText =
         "You either didnt enter a string or you misspelled rock, paper and scissors.";
       playerSelection = prompt(warningText + "\n" + promptext2);
+
+      // if press cancel, exits warning loop & game
       if (playerSelection == null) return "game exited!";
       outcome = playRound(playerSelection, computerPlay());
     }
