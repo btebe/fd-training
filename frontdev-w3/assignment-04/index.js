@@ -1,54 +1,11 @@
+const hand = ["rock", "paper", "scissors"];
+
 /**
  * generates a random hand selection
  * @return {string} a hand selection
  */
 let computerPlay = () => {
-  // Returns a random integer from 0 to 2:
-  let hands = ["Rock", "Paper", "Scissors"];
-  return hands[Math.floor(Math.random() * hands.length)];
-};
-
-/**
- *  needs the help of the checkHand function to check if player input is within the keywords.
- * corrects player's keyword case to lowercase
- * @param {string} playerSelection player's input
- * @return {string} the standard case of one of the keywords inputed. or else it returns a null.
- */
-let proofHand = (playerSelection) => {
-  // 1 if sorted after, [if capitalized]
-  // 0 if equal
-  let ls = ["rock", "paper", "scissors"];
-  for (let i = 0; i <= ls.length; i++) {
-    if (playerSelection.localeCompare(ls[i]) === 1) {
-      return checkHand(playerSelection.toLowerCase());
-    } else if (playerSelection.localeCompare(ls[i]) === 0) {
-      return checkHand(playerSelection);
-    }
-  }
-  return null;
-};
-
-/**
- * helps proofHand function if player's input matches the correct keywords for the game.
- * @param {string} hand player's input
- * @return {string} the standard case of one of the keywords inputed. or else it returns a null.
- */
-let checkHand = (hand) => {
-  let playerHand;
-  switch (hand) {
-    case "rock":
-      playerHand = "Rock";
-      break;
-    case "paper":
-      playerHand = "Paper";
-      break;
-    case "scissors":
-      playerHand = "Scissors";
-      break;
-    default:
-      return null;
-  }
-  return playerHand;
+  return hand[Math.floor(Math.random() * hand.length)];
 };
 
 /**
@@ -66,35 +23,19 @@ let gameLogic = (playerHand, computerHand) => {
     winnerText: "",
     loserText: "",
   };
-  const hand = ["Rock", "Paper", "Scissors"];
+
   if (playerHand === computerHand) {
     result.tieScore = 1;
-  } else if (playerHand === hand[0]) {
-    if (computerHand === hand[1]) {
-      result.computerScore = 1;
-      result.loserText = "You Lose! Paper beats Rock!";
-    } else {
-      result.playerScore = 1;
-      result.winnerText = "You win!";
-    }
-  } else if (playerHand === hand[1]) {
-    if (computerHand === hand[2]) {
-      result.computerScore = 1;
-      result.loserText = "You Lose! Scissors beats Paper!";
-    } else {
-      result.playerScore = 1;
-      result.winnerText = "You win!";
-    }
-  } else if (playerHand === hand[2]) {
-    if (computerHand === hand[0]) {
-      result.computerScore = 1;
-      result.loserText = "You Lose! Rock beats Scissors!";
-    } else {
-      result.playerScore = 1;
-      result.winnerText = "You win!";
-    }
+  } else if (
+    (playerHand === hand[0] && computerHand === hand[2]) ||
+    (playerHand === hand[1] && computerHand === hand[0]) ||
+    (playerHand === hand[2] && computerHand === hand[1])
+  ) {
+    result.playerScore = 1;
+    result.winnerText = "You win!";
   } else {
-    return null;
+    result.computerScore = 1;
+    result.loserText = `You Lose! ${computerHand} beats ${playerHand}!`;
   }
 
   return result;
@@ -110,9 +51,9 @@ let playRound = (playerSelection, computerSelection) => {
   if (typeof playerSelection !== "string") {
     return null;
   } else {
-    let playerHand = proofHand(playerSelection);
-    if (playerHand == null) return null;
-    return gameLogic(playerHand, computerSelection);
+    let keyword = playerSelection.toLowerCase();
+    if (!hand.includes(keyword)) return null;
+    return gameLogic(keyword, computerSelection);
   }
 };
 
@@ -162,10 +103,13 @@ let game = () => {
       console.log(`%c${outcome.loserText}`, style);
     }
   }
+  return scoreBoard(playerScore, computerScore, tieCounter);
+};
+
+let scoreBoard = (playerScore, computerScore, tieCounter) => {
   const boardStyle = "color:orange; font-weight: bold;";
   let scores = `player: ${playerScore}, computer: ${computerScore}, tie: ${tieCounter}`;
   console.log("%cScore Board:" + "\n" + scores, boardStyle);
-
   if (playerScore === computerScore) {
     return "There is no winner. Its a tie!";
   } else if (playerScore > computerScore) {
