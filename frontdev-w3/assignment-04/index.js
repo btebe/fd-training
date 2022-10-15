@@ -3,7 +3,6 @@
  * @return {string} a hand selection
  */
 let computerPlay = () => {
-  // Returns a random integer from 0 to 2:
   let hands = ["Rock", "Paper", "Scissors"];
   return hands[Math.floor(Math.random() * hands.length)];
 };
