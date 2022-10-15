@@ -5,7 +5,55 @@ const hand = ["rock", "paper", "scissors"];
  * @return {string} a hand selection
  */
 let computerPlay = () => {
+<<<<<<< HEAD
   return hand[Math.floor(Math.random() * hand.length)];
+=======
+  let hands = ["Rock", "Paper", "Scissors"];
+  return hands[Math.floor(Math.random() * hands.length)];
+};
+
+/**
+ *  needs the help of the checkHand function to check if player input is within the keywords.
+ * corrects player's keyword case to lowercase
+ * @param {string} playerSelection player's input
+ * @return {string} the standard case of one of the keywords inputed. or else it returns a null.
+ */
+let proofHand = (playerSelection) => {
+  // 1 if sorted after, [if capitalized]
+  // 0 if equal
+  let ls = ["rock", "paper", "scissors"];
+  for (let i = 0; i <= ls.length; i++) {
+    if (playerSelection.localeCompare(ls[i]) === 1) {
+      return checkHand(playerSelection.toLowerCase());
+    } else if (playerSelection.localeCompare(ls[i]) === 0) {
+      return checkHand(playerSelection);
+    }
+  }
+  return null;
+};
+
+/**
+ * helps proofHand function if player's input matches the correct keywords for the game.
+ * @param {string} hand player's input
+ * @return {string} the standard case of one of the keywords inputed. or else it returns a null.
+ */
+let checkHand = (hand) => {
+  let playerHand;
+  switch (hand) {
+    case "rock":
+      playerHand = "Rock";
+      break;
+    case "paper":
+      playerHand = "Paper";
+      break;
+    case "scissors":
+      playerHand = "Scissors";
+      break;
+    default:
+      return null;
+  }
+  return playerHand;
+>>>>>>> 864c1a2918fae0c7f5c9b71eb8ecd6515d6947d4
 };
 
 /**
