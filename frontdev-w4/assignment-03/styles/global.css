@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
 :root {
-  
   --bg-main: hsl(222, 26%, 31%);
   --bg-toggle: hsl(223, 31%, 20%);
   --bg-screen: hsl(224, 36%, 15%);
-  
+
   --bg-key: 225 21% 49%;
   --bg-key-shadow: 224 28% 35%;
   --bg-key-red: 6 63% 50%;
   --bg-key-dark-shadow: 6 70% 34%;
+  --bg-key-red-hover: #f96b5b;
   --bg-key-light: 30 25% 89%;
   --bg-key-light-shadow: 28 16% 65%;
 
   --text-key-clr: hsl(221, 14%, 31%);
   --text-screen-clr: hsl(0, 0%, 100%);
+  --key-erase-clr: #a2b2e1;
 
-  --ff-primary: 'League Spartan', sans-serif;
+  --ff-primary: "League Spartan", sans-serif;
 
   --fw-700: 700;
 
@@ -41,8 +42,6 @@
   --lh-screen: var(--lh-400);
   --lh-key-num: var(--lh-300);
   --lh-key-op: var(--lh-100);
-  
-  
 }
 
 /* desktop */
@@ -52,15 +51,13 @@
     --fs-screen: var(--fs-500);
     --fs-key-num: var(--fs-400);
     --fs-key-op: var(--fs-200);
-  
+
     --lh-logo: var(--lh-300);
     --lh-screen: var(--lh-500);
     --lh-key-num: var(--lh-400);
     --lh-key-op: var(--lh-200);
   }
 }
-
-
 
 /* ------------- */
 /* Reset         */
@@ -94,10 +91,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html, body{
-  height: 100%;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -107,12 +100,15 @@ a {
 
 body {
   text-rendering: optimizeSpeed;
-  /* line-height: 1.2; */
   font-family: var(--ff-primary);
   background-color: var(--bg-main);
-
+  display: grid;
+  min-height: 100vh;
 }
 
+input[type="button"] {
+  font-family: var(--ff-primary) !important;
+}
 
 /* Make images easier to work with */
 
@@ -121,7 +117,6 @@ picture {
   max-width: 100%;
   display: block;
 }
-
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 
@@ -144,27 +139,29 @@ picture {
 /* Utility Classes  */
 /* ------------- */
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
+.body-container {
+  height: 100%;
+  display: grid;
+}
+
 .container {
-  padding-inline: 6rem;
+  padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
 }
 
-* :focus:not(:focus-visible) {
-  /* undo all the above focus styles */
-  outline: 0;
-  outline-offset: 0.25rem;
+@media (min-width: 500px) {
+  .body-container {
+    justify-content: center;
+  }
 }
 
-
-* :focus-visible { 
-  /* some even *more* exciting button focus styles, just for keyboard navigators */
-  outline: 0.25em var(--clr-accent-400) dashed;
-  outline-offset: 0.25rem;
-
+@media (min-width: 1000px) {
+  .container {
+    max-width: fit-content;
+  }
 }
-
