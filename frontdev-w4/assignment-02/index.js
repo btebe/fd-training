@@ -1,5 +1,6 @@
 // variables
 const hand = ["rock", "paper", "scissors"];
+const topScore = 4;
 let totalPlayerScore = 0;
 let totalComputerScore = 0;
 let playerScore = 0;
@@ -7,25 +8,25 @@ let computerScore = 0;
 let tieCounter = 0;
 let playerSelection = "";
 let computerSelection = "";
-const topScore = 4;
 
-// container elements
+
+// stage container elements
 var handSelectCon = document.getElementById("handSelection");
 var compareCon = document.getElementById("compare");
 var resultCon = document.getElementById("result");
 
-// related players elements
+// related game elements
 var player = document.getElementById("player");
 var computer = document.getElementById("computer");
 var score = document.getElementById("playerScore");
-let resultText = document.querySelector(".result h1");
-var endText = document.getElementById("endText");
+let result_text = document.querySelector(".result h1");
+var final_text = document.getElementById("endText");
 
 // button elements
-var replayBtn = document.getElementById("replay");
-var rulesBtn = document.getElementById("rulesBtn");
-var dialogClose = document.getElementById("close");
-var dialogEndClose = document.getElementById("endClose");
+var replay_btn = document.getElementById("replay");
+var rules_btn = document.getElementById("rulesBtn");
+var close_btn_rule = document.getElementById("close");
+var close_btn_final = document.getElementById("endClose");
 
 // other elements
 var overlay = document.getElementById("overlay");
@@ -33,24 +34,24 @@ var overlay = document.getElementById("overlay");
 // click events
 
 //open rule dialog
-rulesBtn.addEventListener("click", () => {
+rules_btn.addEventListener("click", () => {
   overlay.style.display = "inherit";
   document.getElementById("rules").open = true;
 });
 
 // close rule dialog
-dialogClose.addEventListener("click", () => {
+close_btn_rule.addEventListener("click", () => {
   document.getElementById("rules").open = false;
   overlay.style.display = "none";
 });
 
-// close end result dialog
-dialogEndClose.addEventListener("click", () => {
+// close final result dialog
+close_btn_final.addEventListener("click", () => {
   document.getElementById("endResult").open = false;
   overlay.style.display = "none";
 });
 
-// player choices of hand
+// first stage; player choices of hand
 const handList = document.querySelectorAll(".hand");
 handList.forEach((hand) => {
   hand.addEventListener("click", () => {
@@ -59,12 +60,14 @@ handList.forEach((hand) => {
   });
 });
 
-// replay game from begining
-replayBtn.addEventListener("click", () => {
+// replay first stage
+replay_btn.addEventListener("click", () => {
+  //reset scores but not total scores
   playerScore = 0;
   computerScore = 0;
   tieCounter = 0;
 
+  //add & remove styling of elements
   compareCon.classList.remove("ending");
   player.classList.remove(playerSelection, "isWinner");
   computer.classList.remove(computerSelection, "isWinner");
@@ -80,41 +83,41 @@ replayBtn.addEventListener("click", () => {
   }
 });
 
-// functions
-
 function computerPlay() {
   return hand[Math.floor(Math.random() * hand.length)];
 }
 
-//computer's hand
+//second stage; computer's hand
 function nextStage() {
+  //styling
   handSelectCon.style.display = "none";
   compareCon.style.display = "inherit";
+  //display which hand player chose
   player.classList.toggle(playerSelection);
-  // to show some delay
-  setTimeout(function () {
-    computerSelection = computerPlay();
-    computer.classList.toggle(computerSelection);
-    gameLogic(playerSelection, computerSelection);
-  }, 500);
+  computerSelection = computerPlay();
+  //display which hand computer generated
+  computer.classList.toggle(computerSelection);
+  gameLogic(playerSelection, computerSelection);
 }
 
+//last stage & final stage; show which player wins
 function resultStage(winner, result) {
+  //display winner for the last stage
   resultCon.style.display = "inherit";
   compareCon.classList.toggle("ending");
   winner != null ? winner.classList.toggle("isWinner") : "";
-  resultText.textContent = result;
+  result_text.textContent = result;
 
-  // display total scores of the winner
+  // display final score for the winner of the game
   if (totalPlayerScore > topScore) {
     document.getElementById("endResult").open = true;
     overlay.style.display = "inherit";
-    endText.textContent = "Congrats, you won the game!";
+    final_text.textContent = "Congrats, you won the game!";
   }
   if (totalComputerScore > topScore) {
     document.getElementById("endResult").open = true;
     overlay.style.display = "inherit";
-    endText.textContent = "You lost the game! Try again";
+    final_text.textContent = "You lost the game! Try again";
   }
 }
 
