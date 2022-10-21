@@ -51,7 +51,7 @@ close_btn_final.addEventListener("click", () => {
   overlay.style.display = "none";
 });
 
-// first stage; player choices of hand
+// first stage; player chooses a hand
 const handList = document.querySelectorAll(".hand");
 handList.forEach((hand) => {
   hand.addEventListener("click", () => {
@@ -67,7 +67,7 @@ replay_btn.addEventListener("click", () => {
   computerScore = 0;
   tieCounter = 0;
 
-  //add & remove styling of elements
+  //resets elements to appear like first stage
   compareCon.classList.remove("ending");
   player.classList.remove(playerSelection, "isWinner");
   computer.classList.remove(computerSelection, "isWinner");
@@ -87,9 +87,9 @@ function computerPlay() {
   return hand[Math.floor(Math.random() * hand.length)];
 }
 
-//second stage; computer's hand
+//second stage; compare hands b/ players
 function nextStage() {
-  //styling
+  //hides first stage & display 2nd stage
   handSelectCon.style.display = "none";
   compareCon.style.display = "inherit";
   //display which hand player chose
