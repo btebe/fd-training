@@ -18,45 +18,45 @@
     - 
 9. What are loops useful for?
     - 
-10.What is the break statement?
+10. What is the break statement?
     - 
 11. What is the continue statement?
     - 
-12.What is the DOM?
+12. What is the DOM?
     - 
-13.How do you target the nodes you want to work with?
+13. How do you target the nodes you want to work with?
     - 
-14.How do you create an element in the DOM?
+14. How do you create an element in the DOM?
     - 
-15.How do you add an element to the DOM?
+15. How do you add an element to the DOM?
     - 
-16.How do you remove an element from the DOM?
+16. How do you remove an element from the DOM?
     - 
-17.How can you alter an element in the DOM?
+17. How can you alter an element in the DOM?
     - 
-18.When adding text to a DOM element, should you use textContent or innerHTML?
+18. When adding text to a DOM element, should you use textContent or innerHTML?
     - 
-19.Where should you include your JavaScript tag in your HTML file when working
+19. Where should you include your JavaScript tag in your HTML file when working
 with DOM nodes?
     - 
-20.How do “events” and “listeners” work?
+20. How do “events” and “listeners” work?
     - 
-21.What are three ways to use events in your code?
+21. What are three ways to use events in your code?
     - 
-22.Why are event listeners the preferred way to handle events?
+22. Why are event listeners the preferred way to handle events?
     - 
-23.What are the benefits of using named functions in your listeners?
+23. What are the benefits of using named functions in your listeners?
     - 
-24.How do you attach listeners to groups of nodes?
+24. How do you attach listeners to groups of nodes?
     - 
-25.What is the difference between the return values of querySelector and
+25. What is the difference between the return values of querySelector and
 querySelectorAll?
     -
-26.What does a “nodelist” contain?
+26. What does a “nodelist” contain?
     - 
-27.Explain the difference between “capture” and “bubbling”.
+27. Explain the difference between “capture” and “bubbling”.
     -
-28.What is the difference between objects and arrays?
+28. What is the difference between objects and arrays?
     -
-29.How do you access object properties?
+29. How do you access object properties?
     - 
