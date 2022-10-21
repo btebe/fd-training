@@ -5,10 +5,12 @@ let equal = document.getElementById("equal");
 let clear = document.getElementById("clear");
 let erase = document.getElementById("erase");
 
+//clear input when page reloads
 window.onload = () => {
   screen_input.value = "";
 };
 
+// keyboard support
 document.addEventListener("keydown", (event) => {
   const keys = [
     "0", "1", "2",
@@ -32,6 +34,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key == "c") clear.click();
 });
 
+//keyboard support
 document.addEventListener("keypress", (event) => {
   const keys = ["+", "*"];
   if (keys.includes(event.key)) screen_input.value += event.key;
@@ -40,6 +43,7 @@ document.addEventListener("keypress", (event) => {
 keyInput.forEach((keybtn) => {
   keybtn.addEventListener("click", () => {
     if (equal_press == 1) {
+      //clear screen for result and holds next value
       screen_input.value = keybtn.value;
       equal_press = 0;
     } else {
@@ -48,6 +52,7 @@ keyInput.forEach((keybtn) => {
   });
 });
 
+//evaluates numerical expressions inputed
 equal.addEventListener("click", () => {
   equal_press = 1;
   let input = screen_input.value;
@@ -63,17 +68,15 @@ equal.addEventListener("click", () => {
   }
 });
 
+//clears screen input
 clear.addEventListener("click", () => {
   screen_input.value = "";
 });
 
+//deletes the last digit inputed
 erase.addEventListener("click", () => {
   screen_input.value = screen_input.value.substr(
     0,
     screen_input.value.length - 1
   );
-
-  // let str = screen_input.value.split("");
-  // str.splice(-1);
-  // screen_input.value = str.join("");
 });
