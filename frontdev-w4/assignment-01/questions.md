@@ -73,6 +73,9 @@ querySelectorAll?
     - bubbling: the event is first captured and handled by the innermost element and then propagated to outer elements.
     - capture:  the event is first captured by the outermost element and propagated to the inner elements.
 28. What is the difference between objects and arrays?
-    -
+    - objects: can store data of different types
+    - arrays: can store data of the same type
 29. How do you access object properties?
-    - 
+    - Dot property accessor: object. property.
+    - Square brackets property access: object['property']
+    - Object destructuring: const { property } = object.
